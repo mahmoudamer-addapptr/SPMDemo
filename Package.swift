@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SPMDemo",
-            targets: ["SPMDemo", "AATKit"]
+            targets: ["SPMDemo"]
         ),
     ],
     dependencies: [
@@ -22,11 +22,11 @@ let package = Package(
         .target(
             name: "SPMDemo",
             dependencies: []),
-        .binaryTarget(
-            name: "AATKit",
-            url: "https://ios-sdk.aatkit.com/aatkit-2.73.1.zip",
-            checksum: "952ed79df61e2a7f3c66bf9098758004bc83b30d24ad432e1eebb1a46bbb2602"
-        ),
+//        .binaryTarget(
+//            name: "AATKit",
+//            url: "https://ios-sdk.aatkit.com/aatkit-2.73.1.zip",
+//            checksum: "952ed79df61e2a7f3c66bf9098758004bc83b30d24ad432e1eebb1a46bbb2602"
+//        ),
         .testTarget(
             name: "SPMDemoTests",
             dependencies: ["SPMDemo"]
