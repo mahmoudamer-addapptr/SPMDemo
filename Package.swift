@@ -9,7 +9,14 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SPMDemo",
-            targets: ["SPMDemo", "GoogleAppMeasurement", "GoogleMobileAds", "GoogleUtilities", "nanopb", "PromisesObjC", "UserMessagingPlatform"]
+            targets: ["SPMDemo",
+                      "AATKit",
+                      "GoogleAppMeasurement",
+                      "GoogleMobileAds",
+                      "GoogleUtilities",
+                      "nanopb",
+                      "PromisesObjC",
+                      "UserMessagingPlatform"]
         ),
     ],
     dependencies: [
@@ -27,6 +34,7 @@ let package = Package(
 //            url: "https://ios-sdk.aatkit.com/aatkit-2.73.1.zip",
 //            checksum: "952ed79df61e2a7f3c66bf9098758004bc83b30d24ad432e1eebb1a46bbb2602"
 //        ),
+        .binaryTarget(name: "AATKit", path: "./Sources/aat/AATKit.framework"),
         .binaryTarget(name: "GoogleAppMeasurement", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleAppMeasurement.xcframework"),
         .binaryTarget(name: "GoogleMobileAds", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "GoogleUtilities", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleUtilities.xcframework"),
