@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SPMDemo",
-            targets: ["SPMDemo", "GoogleSDK"]
+            targets: ["SPMDemo", "GoogleAppMeasurement", "GoogleMobileAds", "GoogleUtilities", "nanopb", "PromisesObjC", "UserMessagingPlatform"]
         ),
     ],
     dependencies: [
@@ -27,7 +27,12 @@ let package = Package(
 //            url: "https://ios-sdk.aatkit.com/aatkit-2.73.1.zip",
 //            checksum: "952ed79df61e2a7f3c66bf9098758004bc83b30d24ad432e1eebb1a46bbb2602"
 //        ),
-        .binaryTarget(name: "GoogleSDK", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/*"),
+        .binaryTarget(name: "GoogleAppMeasurement", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleAppMeasurement.xcframework"),
+        .binaryTarget(name: "GoogleMobileAds", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleMobileAds.xcframework"),
+        .binaryTarget(name: "GoogleUtilities", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/GoogleUtilities.xcframework"),
+        .binaryTarget(name: "nanopb", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/nanopb.xcframework"),
+        .binaryTarget(name: "PromisesObjC", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/PromisesObjC.xcframework"),
+        .binaryTarget(name: "UserMessagingPlatform", path: "./Sources/GoogleMobileAdsSdkiOS-8.4.0/UserMessagingPlatform.xcframework"),
         .testTarget(
             name: "SPMDemoTests",
             dependencies: ["SPMDemo"]
