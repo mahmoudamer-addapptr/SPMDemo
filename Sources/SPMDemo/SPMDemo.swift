@@ -2,7 +2,7 @@
 public struct SPMDemo {
     public var text = "Hello, World!"
     
-    public testFunc() {
+    public func testFunc() {
         print("👉")
     }
 }
