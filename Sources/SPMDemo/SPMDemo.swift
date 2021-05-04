@@ -1,4 +1,8 @@
 
-struct SPMDemo {
-    var text = "Hello, World!"
+public struct SPMDemo {
+    public var text = "Hello, World!"
+    
+    public testFunc() {
+        print("👉")
+    }
 }

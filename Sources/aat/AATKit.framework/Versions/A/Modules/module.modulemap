@@ -1,4 +1,0 @@
-framework module AATKit {
-    umbrella header "AATKit.h"
-    export *
-}
