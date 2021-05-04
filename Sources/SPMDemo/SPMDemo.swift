@@ -1,5 +1,5 @@
 
-public struct SPMDemo {
+public class SPMDemo {
     public var text = "Hello, World!"
     
     public func testFunc() {
