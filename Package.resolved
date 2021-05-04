@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TeadsSDK",
+        "repositoryURL": "https://github.com/teads/TeadsSDK-iOS",
+        "state": {
+          "branch": null,
+          "revision": "c86706689c575b00ff8225aecb240fb27940e61b",
+          "version": "4.8.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
